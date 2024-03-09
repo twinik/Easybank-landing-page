@@ -1,0 +1,29 @@
+---
+import RequestButton from "./RequestButton.astro";
+---
+
+<div class="flex flex-col-reverse lg:flex-row items-center justify-center">
+  <div class="lg:w-1/2 lg:pr-28 2xl:pr-40 text-center lg:text-left p-8 lg:p-32">
+    <h1
+      class="text-4xl lg:text-5xl font-normal text-darkBlue my-5 2xl:text-7xl"
+    >
+      Next generation digital banking
+    </h1>
+    <p class="text-sm text-pretty lg:text-base text-grayishBlue 2xl:text-2xl">
+      Take your financial life online. Your Easybank account will be a
+      one-stop-shop for spending, saving, budgeting, investing, and much more.
+    </p>
+    <div class="flex justify-center lg:justify-start mt-10">
+      <RequestButton />
+    </div>
+  </div>
+  <div
+    class="lg:w-1/2 bg-heroMobile lg:bg-hero bg-cover lg:bg-left bg-no-repeat overflow-hidden lg:overflow-visible lg:z-0 w-full lg:h-max h-96"
+  >
+    <img
+      class="mt-[-15%] lg:mt-0 scale-125 lg:ml-[7rem] px-12 lg:px-14"
+      src="/images/image-mockups.png"
+      alt="mockups"
+    />
+  </div>
+</div>

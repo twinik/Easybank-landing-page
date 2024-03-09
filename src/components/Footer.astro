@@ -1,0 +1,76 @@
+---
+import RequestButton from "./RequestButton.astro";
+---
+
+<footer class="bg-darkBlue py-6 px-12 lg:px-32 lg:py-12">
+  <div
+    class="flex flex-col justify-center items-center gap-8 lg:flex-row lg:justify-between"
+  >
+    <div class="flex flex-col justify-center items-center gap-8 lg:items-start">
+      <img src="/images/logo.svg" alt="Logo" />
+      <div class="flex flex-row justify-center gap-5">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img
+            src={"/images/icon-facebook.svg"}
+            alt={"Facebook"}
+            class="w-6 h-6"
+          />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img
+            src={"/images/icon-youtube.svg"}
+            alt={"Youtube"}
+            class="w-6 h-6"
+          />
+        </a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <img
+            src={"/images/icon-twitter.svg"}
+            alt={"Twitter"}
+            class="w-6 h-6"
+          />
+        </a>
+        <a href="https://www.pinterest.com/" target="_blank">
+          <img
+            src={"/images/icon-pinterest.svg"}
+            alt={"Pinterest"}
+            class="w-6 h-6"
+          />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img
+            src={"/images/icon-instagram.svg"}
+            alt={"Instagram"}
+            class="w-6 h-6"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4 lg:flex-row lg:gap-32">
+      <div
+        class="flex flex-col justify-center items-center gap-4 text-veryLightGray font-light lg:items-start"
+      >
+        <a href="/about" class="hover:text-limeGreen"> About us</a>
+        <a href="/contact" class="hover:text-limeGreen"> Contact</a>
+        <a href="/blog" class="hover:text-limeGreen"> Blog</a>
+      </div>
+
+      <div
+        class="flex flex-col justify-center items-center gap-4 text-veryLightGray font-light lg:items-start"
+      >
+        <a href="/careers" class="hover:text-limeGreen"> Careers</a>
+        <a href="/support" class="hover:text-limeGreen"> Support</a>
+        <a href="/privacy" class="hover:text-limeGreen"> Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center gap-8 lg:items-end">
+      <RequestButton />
+
+      <div class="text-grayishBlue font-medium">
+        <p>&copy; Easybank. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
