@@ -2,7 +2,9 @@
 const { title, author, description, image } = Astro.props;
 ---
 
-<div class="rounded-lg bg-white lg:w-1/4 lg:h-[26rem] 2xl:h-min">
+<div
+  class="rounded-lg bg-white lg:w-1/4 lg:h-[26rem] 2xl:h-min hover:opacity-80 transition-all duration-200 ease-in-out"
+>
   <a href="#">
     <img
       src={`/images/${image}`}
@@ -12,7 +14,7 @@ const { title, author, description, image } = Astro.props;
     <div class="p-6">
       <p class="text-xs text-pretty text-grayishBlue">By {author}</p>
       <h4
-        class="text-xl tracking-tighter font-medium text-darkBlue my-2 hover:cursor-pointer hover:text-limeGreen transition-all duration-200 ease-in-out"
+        class="text-xl tracking-tighter font-medium text-darkBlue my-2 hover:text-limeGreen transition-all duration-200 ease-in-out"
       >
         {title}
       </h4>
